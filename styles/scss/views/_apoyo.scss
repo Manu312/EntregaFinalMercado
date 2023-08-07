@@ -1,0 +1,48 @@
+.apoyo-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 430px;
+    padding-right: 430px;
+}
+.primario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.secundario{
+    @extend .primario;
+}
+.terciario{
+    @extend .primario;
+}
+.btn-apoyo{
+    color: black;
+    background-color: $color-bgSecondary;
+    border-radius: 20px;
+    padding: 8px;
+}
+.btn-apoyo:hover{
+    background-color: $color-bgPrimary;
+    color: white;
+}
+.materias-pics img{
+    margin-left: 40px;
+}
+.materias-pics{
+    margin: 10px 0;
+}
+@media  screen and (max-width:1270px){
+    .apoyo-container{
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+@media  screen and (max-width:900px){
+    .apoyo-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

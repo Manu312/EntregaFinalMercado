@@ -1,0 +1,17 @@
+{
+  "name": "preentrega3mercado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss styles/scss/style.scss styles/css/style.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

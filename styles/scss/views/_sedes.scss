@@ -1,0 +1,98 @@
+main{
+    height: 70vh;
+}
+.sedes-container{
+    height: 80%;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+}
+.btn-sede{
+    color: black;
+    padding: 1px;
+    margin: 15px 0;
+}
+.belgrano{
+    width: 100%;
+    background-color: $color-bgSecondary;
+    margin-right: 10px;
+    border-radius: 5px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.Almagro{
+    @extend .belgrano;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.virtual{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.frame{
+    width: 600px;
+}
+@media screen  and  (max-width:1420px) {
+    .sedes-container{
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 50px;
+    }
+    .frame{
+        width: 500px;
+    }
+}
+@media screen  and  (max-width:1057px) {
+    .sedes-container{
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+    .frame{
+        width: 300px;
+    }
+}
+@media screen and  (max-width:768px){
+    .sedes-container{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .belgrano{
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .frame{
+        height: 150px;
+        width: 350px;
+    }
+    .virtual{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:374px) {
+    .frame{
+        height: 100px;
+        width: 200px;
+    }
+}

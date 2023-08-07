@@ -1,0 +1,20 @@
+
+.logo-red{
+    border-radius: 5px;
+    filter: invert(0);
+}
+$redes:(
+    gmail:$color-gmail,
+    ig:$color-ig,
+    wsp:$color-wsp
+);
+@each $red, $color in $redes{
+    .logo-red#{$red}:hover{
+        @extend .logo-red;
+        background-color: $color;
+    }
+    .logo-red#{$red}{
+        filter: invert(1);
+    }
+}
+
